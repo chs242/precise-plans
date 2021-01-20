@@ -13,7 +13,7 @@
 <body class="bg-gray-100">
   <header x-data="{ open: false }" id="header"
     class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 shadow header">
-    <a href="#top"><img src="/static/img/logo.png" alt="Precise Plans" class="h-12"></a>
+    <a href="#top"><img src="/static/img/logo.png" alt="Precise Plans" class="h-14 md:32"></a>
     <nav class="items-center hidden space-x-4 text-white uppercase lg:flex">
       <a href="#top">Home</a>
       <a href="#about">About Us</a>
@@ -113,8 +113,9 @@
   <section>
 
     <h1 id="about" class="py-12 text-3xl text-center text-blue-400 uppercase bg-white">About Us</h1>
+    <img src="/static/img/unnamed.jpg" class="md:hidden object-cover w-full h-full">
     <div class="grid sm:grid-cols-2">
-      <img src="/static/img/home.jpeg" class="object-cover w-full h-full">
+      <img src="/static/img/unnamed.jpg" class="hidden md:block object-cover w-full h-full">
       <div class="px-8 py-20 bg-gray-100">
         <article class="max-w-xl mx-auto space-y-3 leading-relaxed">
           <p>Historically, when building, renovating or extending your home, you looked at the floor plans on paper or a
@@ -317,7 +318,7 @@
             </div>
             <div class="col-span-full">
               <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" placeholder="Please tell us how we can help..."
+              <textarea  id="message" name="message" placeholder="Please tell us how we can help..."
                 class="h-20 form-input"></textarea>
             </div>
             <p class="text-center col-span-full">
