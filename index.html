@@ -300,30 +300,31 @@
 
     <h1 id="contact" class="py-12 text-3xl text-center text-blue-400 uppercase bg-white">Contact Us</h1>
     <div class="grid md:grid-cols-2">
-      <div class="px-8 py-20 bg-gray-100">
+      <div class="px-8 pt-10 pb-20 bg-gray-100 md:pb-10">
         <div class="max-w-xl mx-auto">
           <h4 class="text-xl uppercase">We'd like to hear from you...</h4>
+          <h5 class="text-lg py-10 md:py-5 lg:py-10">E: info@preciseplans.co.uk<br>T: 020 3876 8787 </h5>
           <form netlify name="contact" class="grid grid-cols-2 gap-6 mt-6">
             <div>
               <label for="first_name" class="form-label">First Name</label>
-              <input type="text" id="first_name" name="first_name" placeholder="First name..." class="form-input">
+              <input type="text" id="first_name" name="first_name" placeholder="First name..." class="form-input text-sm">
             </div>
             <div>
               <label for="last_name" class="form-label">Last Name</label>
-              <input type="text" id="last_name" name="last_name" placeholder="Last name..." class="form-input">
+              <input type="text" id="last_name" name="last_name" placeholder="Last name..." class="form-input text-sm">
             </div>
             <div>
               <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="Phone Number..." class="form-input">
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number..." class="form-input text-sm">
             </div>
             <div>
               <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="email" placeholder="Email..." class="form-input">
+              <input type="email" id="email" name="email" placeholder="Email..." class="form-input text-sm">
             </div>
             <div class="col-span-full">
               <label for="message" class="form-label">Message</label>
               <textarea  id="message" name="message" placeholder="Please tell us how we can help..."
-                class="h-20 form-input"></textarea>
+                class="h-20 form-input text-sm"></textarea>
             </div>
             <p class="text-center col-span-full">
               <button class="px-6 py-3 font-bold text-white uppercase transition bg-blue-400 rounded hover:bg-blue-500">
@@ -340,10 +341,24 @@
       </div>
     </div>
 
-    <footer class="flex items-center justify-between px-12 py-12 text-gray-300 bg-black">
-      <p class="">&copy; 2021 by Precise Plans<br>Trading as Taryag LTD (Reg Number: 12587579)<br>Office: 2 Woodlands, Golders Green <br>London, NW11 9QL</p>
-      <p class="flex items-center space-x-2 hidden md:block"><span class="pb-4 text-sm">Powered by </span><a href="https://www.softwarebuild.co.uk" target="_blank"><img
-          src="https://www.softwarebuild.co.uk/img/SVGLogo.svg" alt="Software Build" class="w-24"></a></p>
+    <footer class="px-12 py-12 text-gray-300 bg-black md:flex md:items-center md:justify-between">
+
+      <div class="flex pb-5 px-3 justify-center md:block lg:w-1/3">
+        <a href="https://www.instagram.com/precise_plans/" target="_blank">
+          <img src="/static/img/instagram.png" target="_blank" alt="Instagram" class="w-7 pr-1 md:pr-0 md:pb-1 lg:mx-auto">
+        </a>
+        <a href="https://www.linkedin.com/company/precise-plans/" target="_blank">
+          <img src="/static/img/linkedin.png" target="_blank" alt="linkedin" class="w-7 pl-1 md:pl-0 md:pt-1 lg:mx-auto">
+        </a>
+      </div>
+
+      <p class="lg:order-first lg:w-1/3">&copy; 2021 by Precise Plans<br>Trading as Taryag LTD (Reg Number: 12587579)<br>Office: 2 Woodlands, Golders Green <br>London, NW11 9QL</p>
+
+      <div class="flex justify-center items-center pt-5 space-x-2 lg:w-1/3 md:pt-0 lg:justify-end">
+        <p><span class="hidden pb-4 text-sm md:block">Powered by </span><a href="https://www.softwarebuild.co.uk" target="_blank"><img
+        src="https://www.softwarebuild.co.uk/img/SVGLogo.svg" alt="Software Build" class="w-24"></a></p>
+      </div>
+
     </footer>
   </section>
 
