@@ -73,7 +73,7 @@
   <!-- Hero -->
   <section x-data="{ open: false }"
     x-init="$watch('open', value => document.getElementById('video')[open ? 'play' : 'pause']())"
-    class="relative h-screen bg-center bg-cover" style="background-image: url(/static/img/home.jpeg)">
+    class="relative h-screen bg-center bg-cover" style="background-image: url(/static/img/home2.jpeg)">
     <div class="absolute inset-0 flex items-center justify-center"
       style="background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4))">
       <div class="text-center">
@@ -122,9 +122,9 @@
   <section>
 
     <h1 id="about" class="py-12 text-3xl text-center text-blue-400 uppercase bg-white">About Us</h1>
-    <img src="/static/img/unnamed.jpg" class="md:hidden object-cover w-full h-full">
+    <img src="/static/img/gallery/gal4.jpeg" class="md:hidden object-cover w-full h-full">
     <div class="grid sm:grid-cols-2">
-      <img src="/static/img/unnamed.jpg" class="hidden md:block object-cover w-full h-full">
+      <img src="/static/img/gallery/gal4.jpeg" class="hidden md:block object-cover w-full h-full">
       <div class="px-8 py-20 bg-gray-100">
         <article class="max-w-xl mx-auto space-y-3 leading-relaxed">
           <p>Historically, when building, renovating or extending your home, you looked at the floor plans on paper or a
@@ -218,6 +218,17 @@
         Contact
       </a>
     </p>
+  </section>
+
+  <section>
+  <div class="flex flex-wrap">
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/gallery/gal5.jpeg" alt="A photo of a bird"></div>
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/gallery/gal2.jpeg" alt="A photo of a bird"></div>
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/gallery/gal3.jpeg" alt="A photo of a bird"></div>
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/gallery/gal1.jpeg" alt="A photo of a bird"></div>
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/about.jpeg" alt="A photo of a bird"></div>
+    <div class="sm:w-full md:w-1/2 lg:w-1/3 mb-4 bg-white rounded p-3 h-full text-grey-darkest no-underline shadow-md"><img class="w-full block rounded-b" src="/static/img/gallery/gal6.jpeg" alt="A photo of a bird"></div>
+  </div>
   </section>
 
   <!-- Reviews -->
